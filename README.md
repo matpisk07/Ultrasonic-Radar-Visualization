@@ -10,7 +10,7 @@ Un système de cartographie d'obstacles en temps réel inspiré des radars class
 * **Interface Processing :** Adaptation d'un code Java libre de droits (source internet) sur Processing v4.2. Elle traduit les données polaires (Angle/Distance) reçues via le port Série en affichage graphique.
 
 ### 📺 Démo Vidéo
-[▶️ Voir la démonstration vidéo sur YouTube](#)
+[▶️ Voir la démonstration vidéo sur YouTube](https://youtu.be/SPf-uMdrIcA)
 
 ### 📄 Licence & Crédits
 * **Firmware Arduino :** Sous licence **GNU GPLv3**. Vous êtes libres d'utiliser, modifier et redistribuer ce logiciel, à condition de me créditer et de conserver la même licence libre pour les travaux dérivés.
