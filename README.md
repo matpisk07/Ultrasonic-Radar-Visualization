@@ -6,6 +6,7 @@ Un système de cartographie d'obstacles en temps réel inspiré des radars class
 ### ⚙️ Implémentation Technique
 * **Hardware :** Arduino Leonardo, Capteur US-100, Moteur Pas-à-pas.
 * **Précision Capteur (Mon travail) :** Le capteur US-100 est utilisé en **Mode UART** (au lieu du mode Pulse/PWM standard). J'ai écrit le firmware pour exploiter la compensation de température intégrée et obtenir des mesures fiables.
+* **Stabilité USB (Note technique) :** Une séquence de redémarrage dynamique du port Série (`Serial.end/begin`) a été implémentée. Elle permet de réinitialiser la connexion USB native de la Leonardo sans avoir à débrancher physiquement le câble lors des redémarrages du script.
 * **Visualisation (Processing) :** L'interface graphique est une adaptation personnelle d'un script open-source standard. Elle traduit les données polaires (Angle/Distance) reçues via le port Série en affichage graphique.
 
 ### 📺 Démo Vidéo
