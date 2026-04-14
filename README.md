@@ -11,8 +11,6 @@ Un système de cartographie d'obstacles en temps réel inspiré des radars class
 
 ### 🔌 Câblage (Pinout)
 
-Le projet utilise un **Arduino Leonardo**. L'utilisation du port `Serial1` permet de dédier la communication USB à l'affichage graphique sur PC sans interférences.
-
 * **Capteur US-100 (Mode UART)** :
     * **VCC** -> Pin **5V**
     * **GND** -> Pin **GND**
