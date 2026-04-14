@@ -9,6 +9,13 @@ Un système de cartographie d'obstacles en temps réel inspiré des radars class
 * **Stabilité USB (Note technique) :** Une séquence de redémarrage dynamique du port Série (`Serial.end/begin`) a été implémentée. Elle permet de réinitialiser la connexion USB native de la Leonardo sans avoir à débrancher physiquement le câble lors des redémarrages du script.
 * **Interface Processing :** Adaptation d'un code Java libre de droits (source internet) sur Processing v4.2. Elle traduit les données polaires (Angle/Distance) reçues via le port Série en affichage graphique.
 
+### 🔌 Câblage (Pinout)
+* **Capteur US-100 (Mode UART)** -> Broches **RX (Pin 0)** et **TX (Pin 1)** de l'Arduino Leonardo (`Serial1`).
+  * ⚠️ **Note matérielle importante :** Le capteur US-100 possède un petit "jumper" (cavalier) à l'arrière. Pour qu'il fonctionne en mode UART avec ce code, **ce jumper doit impérativement être en place**. S'il est retiré, le capteur bascule en mode classique "Trigger/Echo" et la communication série ne fonctionnera pas.
+* **Moteur Pas-à-pas (Driver type ULN2003)** -> Broches **9, 11, 10, 8** de l'Arduino Leonardo.
+* **Interrupteur (Start/Stop du scan)** -> Broche **6** de l'Arduino (l'autre patte reliée directement au **GND**, grâce au `INPUT_PULLUP` interne).
+* **Indicateur de Pause** -> Broche **13** (Utilise la LED intégrée à la carte).
+
 ### 📺 Démo Vidéo
 [▶️ Voir la démonstration vidéo sur YouTube](https://youtu.be/SPf-uMdrIcA)
 
